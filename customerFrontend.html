@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Store </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript"
+				src="formChecker.js">
+		</script>
+	</head>
+
+	<body>
+		<form action="customerBackend.php" method="post" onsubmit= "return validate()">
+			<b>Welcome to my pet store!</b>
+			<br>
+			<br>
+			Username:<input type="email" id="username" name="username">
+			<br>
+			Password:<input type="password" id="password" name="password">
+			<br>
+			<br>
+			<br>
+			Please insert the number of each animal you'd like to purchase<br>
+			Puppies ($300):<input type="number" id="puppies" name="puppies">
+			<br>
+			Kittens ($30):<input type="number" id="kittens" name="kittens">
+			<br>
+			Fish: ($15)<input type="number" id="fish" name="fish">
+			<br>
+	 		<br>
+	 		<br>
+	 		What type of shipping would you like?<br>
+  		<input type="radio" name="ship" id="sevenDay" value="0"> Seven Day (Free)<br>
+  		<input type="radio" name="ship" id="overNight" value="50"> Over Night ($50)<br>
+  		<input type="radio" name="ship" id="threeDay" value="5"> Three Day ($5)<br>
+  		<input type="submit" value="Total Purchase">
+		</form>
+
+	<div class = "picBelow">
+		<img src="animals.jpg" alt="Animal Pic">
+	</div>
+
+	</body>
+</html>
